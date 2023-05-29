@@ -19,15 +19,18 @@ public:
 	GLFWwindow* window;
 	int status;
 
+	bool keyStatus[10];
+
 	float aspectRatio;
 	float timeDelta;
 	glm::mat4 camera;
 	glm::mat4 perspective;
 
-	GameObject cameraObj;
+	glm::vec3 position;
 	void updateTimeDelta();
 	void updateCamera();
 	void updatePerspective();
+	void cameraFollow(glm::vec3 pos);
 
 	GameManager(GLFWwindow* window);
 };

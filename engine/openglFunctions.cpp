@@ -6,11 +6,6 @@ void error_callback(int error, const char* description) {
 	fputs(description, stderr);
 }
 
-void keyCallback(GLFWwindow* window, int key, int scancode, int action, int mods) {
-
-}
-
-
 
 GLFWwindow* initOpenGL(int resX, int resY) {
 	GLFWwindow* window;
@@ -43,7 +38,7 @@ GLFWwindow* initOpenGL(int resX, int resY) {
 	glEnable(GL_DEPTH_TEST);
 
 	//callbacks
-	glfwSetKeyCallback(window, keyCallback);
+	
 
 	return window;
 }

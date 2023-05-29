@@ -10,11 +10,10 @@ class GameObject
 {
 public:
 	glm::vec3 pos, rot, scale;
-	float rotAngle;
 
 	glm::mat4 modelMatrix;
 	int modelIndex, textureIndex;
-	bool renderFlag;
+	bool renderFlag, complexModel;
 
 	GameObject* parent;
 	std::vector<GameObject*> children;
@@ -25,13 +24,13 @@ public:
 				int textureIndex = -1,
 				glm::vec3 pos = glm::vec3(0, 0, 0),
 				glm::vec3 scale = glm::vec3(1, 1, 1),
-				glm::vec3 rot = glm::vec3(0, 1, 0),
-				float rotAngle = 0.0f,
-				bool renderFlag = true);
+				glm::vec3 rot = glm::vec3(0, 0, 0),
+				bool renderFlag = true,
+				bool complexModel = true);
 
 	void updateModelMatrix();
 	void updateSelfModelMatrixS();
-private:
 	void addChild(GameObject* child);
+	
 
 };

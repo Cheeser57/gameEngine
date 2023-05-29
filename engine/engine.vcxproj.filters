@@ -36,6 +36,9 @@
     <ClCompile Include="lodepng.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PhysObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="gameManager.h">
@@ -65,12 +68,18 @@
     <ClInclude Include="flatPlane.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
+    <ClInclude Include="PhysObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="fragment.glsl">
       <Filter>Resource Files</Filter>
     </None>
     <None Include="vertex.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="vertex2.glsl">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>
